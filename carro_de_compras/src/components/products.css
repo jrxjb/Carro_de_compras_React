@@ -1,0 +1,17 @@
+.products{
+background-color: aqua;
+}
+
+.products ul {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+}
+
+.products li {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
