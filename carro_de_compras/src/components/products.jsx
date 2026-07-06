@@ -5,7 +5,7 @@ export default function Products ({products}){
         <>
         <section className="products">
             <ul>
-                {products.map((product)=>{
+                {products.slice(0,10).map((product)=>{
                     return(
                     
                     <li key={product.id}>

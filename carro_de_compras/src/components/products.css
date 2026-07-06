@@ -1,17 +1,28 @@
 .products{
-background-color: aqua;
+background-color: rgb(55, 2, 146);
 }
 
 .products ul {
-    background-color: blue;
+
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:1rem;
 
 }
 
 .products li {
-    background-color: blueviolet;
+    background-color: rgb(104, 94, 112);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius:5%;
+    padding:1rem;
+    overflow:hidden;
+}
+
+.products img {
+    width:100%;
+    height:auto;
+    display: block;
+
 }
