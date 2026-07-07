@@ -27,8 +27,8 @@ const saberCategorias = (products)=>{
 console.log(saberCategorias(products))
   return (
     <>
-      <section>
-        <Header/>
+      <section className='app'>
+        <Header setfilters={setfilters} />
         <Products products={filtersProducts(products)}/>
       </section>
 

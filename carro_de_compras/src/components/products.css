@@ -1,5 +1,6 @@
 .products{
-background-color: rgb(55, 2, 146);
+background-color:  #9b9b9b;
+margin: 1rem;
 }
 
 .products ul {
@@ -11,18 +12,23 @@ background-color: rgb(55, 2, 146);
 }
 
 .products li {
-    background-color: rgb(104, 94, 112);
+    background-color: #383838;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius:5%;
     padding:1rem;
     overflow:hidden;
+    gap:1rem;
 }
 
 .products img {
     width:100%;
     height:auto;
     display: block;
+    background-color: #ffffff;
+    aspect-ratio: 12/9;
+    box-shadow: 5px 7px 0px 0px #0D0D0D;
+    border-radius: 5px;
 
 }
