@@ -5,9 +5,8 @@ import {useState} from 'react'
 import Header from './components/header.jsx'
 
 
-function App() {
- const [products] = useState(inicialProducts)
- const [filters,setfilters]=useState({category:"all",minPrice:0})
+function useFilters(){
+const [filters,setfilters]=useState({category:"all",minPrice:0})
 
 const filtersProducts=(products)=>{
   return products.filter((product)=>{ 
@@ -18,6 +17,13 @@ const filtersProducts=(products)=>{
 //  filters.category=== 'all' para obtener un true  en esta condicion
 
 }
+return {filtersProducts,setfilters}
+}
+
+function App() {
+ const [products] = useState(inicialProducts)
+
+ const {filtersProducts,setfilters} = useFilters(products)
 
 const saberCategorias = (products)=>{
   return new Set(products.map( (product)=>{
