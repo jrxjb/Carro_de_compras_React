@@ -5,7 +5,7 @@ import {useContext, useState} from 'react'
 import Header from './components/header.jsx'
 import Footer  from './components/Footer.jsx'
 import useFilters from './hooks/useFilters.jsx'
-
+import Cart from './components/Cart.jsx'
 
 
 
@@ -19,6 +19,7 @@ function App() {
     <>
       <section className='app'>
         <Header  />
+        <Cart/>
         <Products products={filtersProducts(products)}/>
         <Footer/>
       </section>
