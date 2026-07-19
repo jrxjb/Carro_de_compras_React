@@ -7,7 +7,7 @@ import Footer  from './components/Footer.jsx'
 import useFilters from './hooks/useFilters.jsx'
 import Cart from './components/Cart.jsx'
 
-
+//prueba en codeSpace
 
 
 function App() {
